@@ -44,7 +44,7 @@ var trainFrequency = $('#frequency-input').val().trim();
 
 //convert first train
 //minus 1 year to make sure it is before the current time
-var firstTrainConvert = moment(firstTrain, "hh:mm").subtract("1, years");
+var firstTrainConvert = moment(firstTrain, "HH:mm").subtract("1, years");
 
 //compare the current time from the first time the train left
 var difference = timeNow.diff(moment(firstTrainConvert), "minutes");
